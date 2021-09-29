@@ -31,4 +31,4 @@ jobs:
            distribution: 'temurin' # See 'Supported distributions' for available options
            java-version: '11'
            cache: 'gradle'
-      - run: ./gradlew build --no-daemon
+      - run: ./gradlew build
