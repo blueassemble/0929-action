@@ -31,6 +31,6 @@ jobs:
            distribution: 'temurin' # See 'Supported distributions' for available options
            java-version: '11'
            cache: 'gradle'
-      - run: sudo /home/runner/work/_temp/a24afc75-e129-43c6-b02a-01467c904402.sh pub get
+      - run: chmod +x ./gradlew
       - run: ./gradlew build
 
