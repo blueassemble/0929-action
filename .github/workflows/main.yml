@@ -33,8 +33,11 @@ jobs:
            cache: 'gradle'
       - run: chmod +x ./gradlew
       - run: ./gradlew build
-      - uses: actions/upload-artifact@v2
-        with:
-          name: Package
-          path: build/libs
+      #- uses: actions/upload-artifact@v2
+        #with:
+          #name: Package
+          #path: build/libs
+      - run: mkdir dockerfile
+      - run: cp ./build/libs/*.war ./dockerfile
+
 
